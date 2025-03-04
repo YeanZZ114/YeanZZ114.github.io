@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/pngtree-flower-computer-wallpaper-tulip-picture-image_2004324.jpg') no-repeat center center/cover;
+    flex-wrap: wrap;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.heart {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
+
+.heart:hover {
+    transform: rotate(-45deg) scale(1.2);
+}
+
+.titulo {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 7px black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Ajusta el espacio entre los corazones y el botón */
+}
+
+.tulip-button img {
+    width: 120px; /* Ajusta el tamaño del tulipán */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tulip-button img:hover {
+    transform: scale(1.1);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Espacio entre corazones y el botón */
+}
+
+.tulip-button img {
+    width: 120px; /* Ajusta el tamaño del tulipán */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tulip-button img:hover {
+    transform: scale(1.1);
+}

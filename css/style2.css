@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lobster', cursive;
+    background-image: url('../img/fondo.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+.titulo {
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #e63950;
+    transform: scale(1.1);
+}
